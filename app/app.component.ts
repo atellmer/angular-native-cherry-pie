@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Page } from 'ui/page';
-import { topmost } from 'ui/frame';
 import { Resolution } from './utils/resolution';
 
 
@@ -17,10 +15,6 @@ if (resolution.isTablet()) {
 	templateUrl: templateUrl
 })
 export class AppComponent implements OnInit {
-	private page: Page;
 
-	ngOnInit() {
-		this.page = topmost().currentPage;
-		this.page.actionBarHidden = true;
-	}
+	ngOnInit() {}
 }

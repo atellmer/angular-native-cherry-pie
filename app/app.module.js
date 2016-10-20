@@ -4,6 +4,7 @@ var platform_1 = require('nativescript-angular/platform');
 var http_1 = require('nativescript-angular/http');
 var forms_1 = require('nativescript-angular/forms');
 var app_component_1 = require('./app.component');
+var appbar_1 = require('./components/appbar');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -12,13 +13,14 @@ var AppModule = (function () {
             imports: [
                 platform_1.NativeScriptModule,
                 http_1.NativeScriptHttpModule,
-                forms_1.NativeScriptFormsModule,
+                forms_1.NativeScriptFormsModule
             ],
             providers: [],
             declarations: [
                 app_component_1.AppComponent,
+                appbar_1.AppbarComponent
             ],
-            bootstrap: [app_component_1.AppComponent],
+            bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

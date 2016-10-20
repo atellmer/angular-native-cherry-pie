@@ -12,7 +12,8 @@
     "start": "npm run lint && tns livesync android --watch",
     "rebuild": "npm run lint && tns run android",
     "build": "tns build android",
-    "lint": "tslint \"app/**/*.ts\""
+    "lint": "tslint \"app/**/*.ts\"",
+		"clean": "tns platform remove android && tns platform add android"
   },
   "author": "AlexPlex",
   "private": true,

@@ -1,6 +1,5 @@
 "use strict";
 var core_1 = require('@angular/core');
-var frame_1 = require('ui/frame');
 var resolution_1 = require('./utils/resolution');
 var resolution = new resolution_1.Resolution();
 var templateUrl = 'app.component.phone.html';
@@ -10,10 +9,7 @@ if (resolution.isTablet()) {
 var AppComponent = (function () {
     function AppComponent() {
     }
-    AppComponent.prototype.ngOnInit = function () {
-        this.page = frame_1.topmost().currentPage;
-        this.page.actionBarHidden = true;
-    };
+    AppComponent.prototype.ngOnInit = function () { };
     AppComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

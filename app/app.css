@@ -6,10 +6,11 @@
 	font-size: 14;
 }
 
-.app--phone {
-	background-color: seagreen;
+.material-icon {
+	font-size: 32;
+	font-family: 'Material-Design-Iconic-Font';
 }
 
-.app--tablet {
-	background-color: blueviolet;
+.debug {
+	background-color: saddlebrown;
 }
