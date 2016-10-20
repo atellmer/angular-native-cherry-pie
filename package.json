@@ -1,0 +1,44 @@
+{
+  "name": "angular-native-cherry-pie",
+  "version": "0.0.1",
+  "description": "NativeScript Application",
+  "nativescript": {
+    "id": "org.nativescript.cherrypiemobile",
+    "tns-android": {
+      "version": "2.3.0"
+    }
+  },
+  "scripts": {
+    "start": "npm run lint && tns livesync android --watch",
+    "rebuild": "npm run lint && tns run android",
+    "build": "tns build android",
+    "lint": "tslint \"app/**/*.ts\""
+  },
+  "author": "AlexPlex",
+  "private": true,
+  "dependencies": {
+    "@angular/common": "2.1.0",
+    "@angular/compiler": "2.1.0",
+    "@angular/core": "2.1.0",
+    "@angular/forms": "2.1.0",
+    "@angular/http": "2.1.0",
+    "@angular/platform-browser": "2.1.0",
+    "@angular/platform-browser-dynamic": "2.1.0",
+    "@angular/router": "3.1.0",
+    "nativescript-angular": "1.1.0",
+    "nativescript-fresco": "^1.0.11",
+    "reflect-metadata": "~0.1.8",
+    "tns-core-modules": "2.3.0"
+  },
+  "devDependencies": {
+    "babel-traverse": "6.16.0",
+    "babel-types": "6.16.0",
+    "babylon": "6.12.0",
+    "codelyzer": "^1.0.0-beta.2",
+    "lazy": "1.0.11",
+    "nativescript-dev-typescript": "^0.3.2",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.3",
+    "zone.js": "~0.6.21"
+  }
+}
