@@ -1,6 +1,12 @@
 "use strict";
 var core_1 = require('@angular/core');
 var frame_1 = require('ui/frame');
+var resolution_1 = require('./utils/resolution');
+var resolution = new resolution_1.Resolution();
+var templateUrl = 'app.component.phone.html';
+if (resolution.isTablet()) {
+    templateUrl = 'app.component.tablet.html';
+}
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -12,7 +18,7 @@ var AppComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'tm-ng-root',
-            templateUrl: 'app.component.html'
+            templateUrl: templateUrl
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

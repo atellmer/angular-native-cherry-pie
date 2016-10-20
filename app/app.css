@@ -1,1 +1,15 @@
 ﻿@import url('~/platform.css');
+
+.app {
+	background-color: fafafa;
+	font-weight: 400;
+	font-size: 14;
+}
+
+.app--phone {
+	background-color: seagreen;
+}
+
+.app--tablet {
+	background-color: blueviolet;
+}
