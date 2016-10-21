@@ -1,0 +1,12 @@
+.panel {
+	background-color: purple;
+}
+
+.panel--phone {
+	background-color: #fff;
+}
+
+.panel--tablet {
+	width: 300;
+	background-color: #653e96;
+}

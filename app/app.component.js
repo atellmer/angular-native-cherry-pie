@@ -1,24 +1,18 @@
 "use strict";
 var core_1 = require('@angular/core');
-var resolution_1 = require('./utils/resolution');
-var resolution = new resolution_1.Resolution();
-var templateUrl = 'app.component.phone.html';
-if (resolution.isTablet()) {
-    templateUrl = 'app.component.tablet.html';
-}
-var AppComponent = (function () {
-    function AppComponent() {
+var TmAppComponent = (function () {
+    function TmAppComponent() {
     }
-    AppComponent.prototype.ngOnInit = function () { };
-    AppComponent = __decorate([
+    TmAppComponent.prototype.ngOnInit = function () { };
+    TmAppComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'tm-ng-root',
-            templateUrl: templateUrl
+            selector: 'TmApp',
+            template: '<router-outlet></router-outlet>'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], TmAppComponent);
+    return TmAppComponent;
 }());
-exports.AppComponent = AppComponent;
+exports.TmAppComponent = TmAppComponent;
 //# sourceMappingURL=app.component.js.map

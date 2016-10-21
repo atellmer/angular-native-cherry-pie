@@ -1,21 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { Resolution } from '../../utils/resolution';
 
-
 const resolution: Resolution = new Resolution();
-let templateUrl: string = 'appbar.component.phone.html';
+let templateUrl: string = 'panel.component.phone.html';
 
 if (resolution.isTablet()) {
-	templateUrl = 'appbar.component.tablet.html';
+	templateUrl = 'panel.component.tablet.html';
 }
 
 @Component({
 	moduleId: module.id,
-	selector: 'TmAppbar',
+	selector: 'TmPanel',
 	templateUrl: templateUrl,
-	styleUrls: ['appbar.component.css']
+	styleUrls: ['panel.component.css']
 })
-export class TmAppbarComponent implements OnInit {
+export class TmPanelComponent implements OnInit {
+	constructor() { }
 
 	ngOnInit() {}
 }

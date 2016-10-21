@@ -6,20 +6,20 @@ var templateUrl = 'appbar.component.phone.html';
 if (resolution.isTablet()) {
     templateUrl = 'appbar.component.tablet.html';
 }
-var AppbarComponent = (function () {
-    function AppbarComponent() {
+var TmAppbarComponent = (function () {
+    function TmAppbarComponent() {
     }
-    AppbarComponent.prototype.ngOnInit = function () { };
-    AppbarComponent = __decorate([
+    TmAppbarComponent.prototype.ngOnInit = function () { };
+    TmAppbarComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'tm-appbar',
+            selector: 'TmAppbar',
             templateUrl: templateUrl,
             styleUrls: ['appbar.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppbarComponent);
-    return AppbarComponent;
+    ], TmAppbarComponent);
+    return TmAppbarComponent;
 }());
-exports.AppbarComponent = AppbarComponent;
+exports.TmAppbarComponent = TmAppbarComponent;
 //# sourceMappingURL=appbar.component.js.map
