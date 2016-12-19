@@ -4,6 +4,8 @@ import { NativeScriptHttpModule } from 'nativescript-angular/http';
 import { NativeScriptFormsModule } from 'nativescript-angular/forms';
 import { NativeScriptRouterModule } from 'nativescript-angular/router';
 
+import 'rxjs/add/operator/map';
+
 import { ROUTES } from './app.routes';
 import { TmPhoneLayoutComponent } from './components/phone-layout';
 import { TmTabletLayoutComponent } from './components/tablet-layout';
@@ -12,6 +14,7 @@ import { TmAppbarComponent } from './components/appbar';
 import { TmPanelComponent } from './components/panel';
 import { TmCanvasComponent } from './components/canvas';
 import { TmAvatarComponent } from './components/avatar';
+import { FakeUserService } from './shared/fake-user.service';
 
 
 @NgModule({
@@ -31,7 +34,7 @@ import { TmAvatarComponent } from './components/avatar';
     TmCanvasComponent,
     TmAvatarComponent
   ],
-  providers: [],
+  providers: [FakeUserService],
   bootstrap: [TmAppComponent]
 })
 export class AppModule { }

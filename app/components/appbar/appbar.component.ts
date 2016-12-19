@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 import { renderDeviceTemplate } from '../../shared/device';
+import { FakeUserService } from '../../shared/fake-user.service';
 
 
 const phoneTemplUrl = 'appbar.component.phone.html';
@@ -12,8 +14,15 @@ const tabletTemplUrl = 'appbar.component.tablet.html';
   styleUrls: ['appbar.component.css']
 })
 export class TmAppbarComponent implements OnInit {
+  public userAvatar: string;
 
-  consctructor() {}
+  constructor(private fakeUserService: FakeUserService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.fakeUserService
+      .getFakeUser()
+      .subscribe((res: any) => {
+        this.userAvatar = res.results[0].picture.thumbnail;
+      });
+  }
 }
