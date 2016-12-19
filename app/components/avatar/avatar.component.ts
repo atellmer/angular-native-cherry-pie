@@ -6,7 +6,7 @@ import {
 
 @Component({
   moduleId: module.id,
-  selector: 'TmAvatar',
+  selector: 'tm-avatar',
   templateUrl: 'avatar.component.html',
   styleUrls: ['avatar.component.css']
 })

@@ -1,18 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { Resolution } from '../../utils/resolution';
+import { renderDeviceTemplate } from '../../shared/device';
 
 
-const resolution: Resolution = new Resolution();
-let templateUrl = 'appbar.component.phone.html';
-
-if (resolution.isTablet()) {
-  templateUrl = 'appbar.component.tablet.html';
-}
+const phoneTemplUrl = 'appbar.component.phone.html';
+const tabletTemplUrl = 'appbar.component.tablet.html';
 
 @Component({
   moduleId: module.id,
-  selector: 'TmAppbar',
-  templateUrl: templateUrl,
+  selector: 'tm-appbar',
+  templateUrl: renderDeviceTemplate(phoneTemplUrl, tabletTemplUrl),
   styleUrls: ['appbar.component.css']
 })
 export class TmAppbarComponent implements OnInit {

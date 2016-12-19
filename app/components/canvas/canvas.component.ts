@@ -1,18 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { Resolution } from '../../utils/resolution';
+import { renderDeviceTemplate } from '../../shared/device';
 
 
-const resolution: Resolution = new Resolution();
-let templateUrl = 'canvas.component.phone.html';
-
-if (resolution.isTablet()) {
-  templateUrl = 'canvas.component.tablet.html';
-}
+const phoneTemplUrl = 'canvas.component.phone.html';
+const tabletTemplUrl = 'canvas.component.tablet.html';
 
 @Component({
   moduleId: module.id,
-  selector: 'TmCanvas',
-  templateUrl: templateUrl,
+  selector: 'tm-canvas',
+  templateUrl: renderDeviceTemplate(phoneTemplUrl, tabletTemplUrl),
   styleUrls: ['canvas.component.css']
 })
 export class TmCanvasComponent implements OnInit {

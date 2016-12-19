@@ -31,7 +31,8 @@ testem.log
 .DS_Store
 Thumbs.db
 
-app/**/*.js
+/app/**/*.js
+/app/**/*.map
 
 #Nativescript stuff
 platforms/android

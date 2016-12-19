@@ -1,16 +1,15 @@
 import { Routes } from '@angular/router';
 
-import { Resolution } from './utils/resolution';
+import { isPhone, isTablet } from './shared/device';
 import { TmPhoneLayoutComponent } from './components/phone-layout';
 import { TmTabletLayoutComponent } from './components/tablet-layout';
 import { TmPanelComponent } from './components/panel';
 import { TmCanvasComponent } from './components/canvas';
 
 
-const resolution: Resolution = new Resolution();
 let routes: Routes = [];
 
-if (resolution.isPhone()) {
+if (isPhone()) {
   routes = [
     {
       path: '',
@@ -24,7 +23,7 @@ if (resolution.isPhone()) {
   ];
 }
 
-if (resolution.isTablet()) {
+if (isTablet()) {
   routes = [
     { path: '', component: TmTabletLayoutComponent }
   ];

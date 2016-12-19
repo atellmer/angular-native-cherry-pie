@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   moduleId: module.id,
-  selector: 'TmPhoneLayout',
+  selector: 'tm-phone-layout',
   templateUrl: 'phone-layout.component.html',
   styleUrls: ['phone-layout.component.css']
 })

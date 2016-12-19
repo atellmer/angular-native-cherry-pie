@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
 	moduleId: module.id,
-	selector: 'TmApp',
+	selector: 'tm-app',
 	template: '<router-outlet></router-outlet>'
 })
 export class TmAppComponent implements OnInit {

@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   moduleId: module.id,
-  selector: 'TmTabletLayout',
+  selector: 'tm-tablet-layout',
   templateUrl: 'tablet-layout.component.html',
   styleUrls: ['tablet-layout.component.css']
 })

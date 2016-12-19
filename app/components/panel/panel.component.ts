@@ -1,17 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { Resolution } from '../../utils/resolution';
+import { renderDeviceTemplate } from '../../shared/device';
 
-const resolution: Resolution = new Resolution();
-let templateUrl = 'panel.component.phone.html';
 
-if (resolution.isTablet()) {
-  templateUrl = 'panel.component.tablet.html';
-}
+const phoneTemplUrl = 'panel.component.phone.html';
+const tabletTemplUrl = 'panel.component.tablet.html';
 
 @Component({
   moduleId: module.id,
-  selector: 'TmPanel',
-  templateUrl: templateUrl,
+  selector: 'tm-panel',
+  templateUrl: renderDeviceTemplate(phoneTemplUrl, tabletTemplUrl),
   styleUrls: ['panel.component.css']
 })
 export class TmPanelComponent implements OnInit {
