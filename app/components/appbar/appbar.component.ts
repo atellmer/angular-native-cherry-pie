@@ -3,19 +3,21 @@ import { Resolution } from '../../utils/resolution';
 
 
 const resolution: Resolution = new Resolution();
-let templateUrl: string = 'appbar.component.phone.html';
+let templateUrl = 'appbar.component.phone.html';
 
 if (resolution.isTablet()) {
-	templateUrl = 'appbar.component.tablet.html';
+  templateUrl = 'appbar.component.tablet.html';
 }
 
 @Component({
-	moduleId: module.id,
-	selector: 'TmAppbar',
-	templateUrl: templateUrl,
-	styleUrls: ['appbar.component.css']
+  moduleId: module.id,
+  selector: 'TmAppbar',
+  templateUrl: templateUrl,
+  styleUrls: ['appbar.component.css']
 })
 export class TmAppbarComponent implements OnInit {
 
-	ngOnInit() {}
+  consctructor() {}
+
+  ngOnInit() {}
 }

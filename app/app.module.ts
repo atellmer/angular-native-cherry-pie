@@ -15,23 +15,23 @@ import { TmAvatarComponent } from './components/avatar';
 
 
 @NgModule({
-	imports: [
-		NativeScriptModule,
-		NativeScriptHttpModule,
-		NativeScriptFormsModule,
-		NativeScriptRouterModule,
-		NativeScriptRouterModule.forRoot(ROUTES)
-	],
-	providers: [],
-	declarations: [
-		TmAppComponent,
-		TmPhoneLayoutComponent,
-		TmTabletLayoutComponent,
-		TmAppbarComponent,
-		TmPanelComponent,
-		TmCanvasComponent,
-		TmAvatarComponent
-	],
-	bootstrap: [TmAppComponent]
+  imports: [
+    NativeScriptModule,
+    NativeScriptHttpModule,
+    NativeScriptFormsModule,
+    NativeScriptRouterModule,
+    NativeScriptRouterModule.forRoot(ROUTES)
+  ],
+  declarations: [
+    TmAppComponent,
+    TmPhoneLayoutComponent,
+    TmTabletLayoutComponent,
+    TmAppbarComponent,
+    TmPanelComponent,
+    TmCanvasComponent,
+    TmAvatarComponent
+  ],
+  providers: [],
+  bootstrap: [TmAppComponent]
 })
-export class AppModule {}
+export class AppModule { }

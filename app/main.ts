@@ -9,9 +9,9 @@ import { AppModule } from './app.module';
 registerElement('FrescoDrawee', () => require('nativescript-fresco').FrescoDrawee);
 
 if (app.android) {
-	app.onLaunch = function (intent) {
-		fresco.initialize();
-	};
+  app.onLaunch = function (intent) {
+    fresco.initialize();
+  };
 }
 
 platformNativeScriptDynamic().bootstrapModule(AppModule);

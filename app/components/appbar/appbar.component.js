@@ -9,6 +9,7 @@ if (resolution.isTablet()) {
 var TmAppbarComponent = (function () {
     function TmAppbarComponent() {
     }
+    TmAppbarComponent.prototype.consctructor = function () { };
     TmAppbarComponent.prototype.ngOnInit = function () { };
     TmAppbarComponent = __decorate([
         core_1.Component({
