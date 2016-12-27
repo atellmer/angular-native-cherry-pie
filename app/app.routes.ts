@@ -15,9 +15,33 @@ if (isPhone()) {
       path: '',
       component: TmPhoneLayoutComponent,
       children: [
-        { path: '', redirectTo: '/phone/panel', pathMatch: 'full' },
-        { path: 'phone/panel', component: TmPanelComponent },
-        { path: 'phone/canvas', component: TmCanvasComponent }
+        {
+          path: 'phone/panel',
+          component: TmPanelComponent
+        },
+        {
+          path: 'phone/canvas',
+          children: [
+            {
+              path: ':id',
+              children: [
+                {
+                  path: '',
+                  component: TmCanvasComponent
+                }
+              ]
+            }
+          ]
+        },
+        {
+          path: '',
+          redirectTo: 'phone/panel',
+          pathMatch: 'full'
+        },
+        {
+          path: '**',
+          redirectTo: 'phone/panel'
+        }
       ]
     }
   ];
@@ -25,7 +49,10 @@ if (isPhone()) {
 
 if (isTablet()) {
   routes = [
-    { path: '', component: TmTabletLayoutComponent }
+    {
+      path: '',
+      component: TmTabletLayoutComponent
+    }
   ];
 }
 

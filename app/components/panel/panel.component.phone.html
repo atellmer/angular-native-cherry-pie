@@ -1,4 +1,9 @@
-<StackLayout class="panel panel--phone debug">
-  <Label text="I am panel on phone" textWrap="true"></Label>
-  <Button text="Go to Canvas" [nsRouterLink]="['/phone/canvas']"></Button>
+<StackLayout class="panel panel--phone">
+  <ListView [items]="dialogs">
+    <template let-dialog="item">
+      <StackLayout [nsRouterLink]="['/phone/canvas/', dialog.id]">
+        <tm-dialog-item [dialog]="dialog"></tm-dialog-item>
+      </StackLayout>
+    </template>
+  </ListView>
 </StackLayout>
