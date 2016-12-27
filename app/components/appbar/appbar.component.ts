@@ -20,7 +20,7 @@ export class TmAppbarComponent implements OnInit {
 
   ngOnInit() {
     this.fakeUserService
-      .getFakeUser()
+      .getFakeUser({results: 1})
       .subscribe((res: any) => {
         this.userAvatar = res.results[0].picture.thumbnail;
       });
