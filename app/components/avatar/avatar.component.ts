@@ -17,9 +17,5 @@ export class TmAvatarComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    console.log('this.width: ', this.width);
-    console.log('this.height: ', this.height);
-    console.log('this.path: ', this.path);
-  }
+  ngOnInit() { }
 }

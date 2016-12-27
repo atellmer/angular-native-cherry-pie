@@ -28,6 +28,7 @@
     "@angular/platform-browser-dynamic": "2.2.1",
     "@angular/router": "3.2.1",
     "nativescript-angular": "1.2.0",
+    "nativescript-cardview": "^1.2.1",
     "nativescript-fresco": "^1.0.14",
     "nativescript-theme-core": "^0.2.1",
     "reflect-metadata": "~0.1.8",
