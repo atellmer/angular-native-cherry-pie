@@ -5,7 +5,7 @@ import {
 } from '@angular/core';
 
 import { renderDeviceTemplate } from '../../shared/device';
-import { IDialog } from '../../shared/models/dialog-item';
+import { IDialog } from '../../shared/models/dialog-item.model';
 
 
 const phoneTemplUrl = 'dialog-item.component.phone.html';

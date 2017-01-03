@@ -7,6 +7,7 @@ import { NativeScriptModule } from 'nativescript-angular/platform';
 import { NativeScriptHttpModule } from 'nativescript-angular/http';
 import { NativeScriptFormsModule } from 'nativescript-angular/forms';
 import { NativeScriptRouterModule } from 'nativescript-angular/router';
+import { TNSFontIconModule } from 'nativescript-ng2-fonticon';
 
 // Routes
 import { ROUTES } from './app.routes';
@@ -31,7 +32,10 @@ import { FakeUserService } from './shared/fake-user.service';
     NativeScriptHttpModule,
     NativeScriptFormsModule,
     NativeScriptRouterModule,
-    NativeScriptRouterModule.forRoot(ROUTES)
+    NativeScriptRouterModule.forRoot(ROUTES),
+    TNSFontIconModule.forRoot({
+      'mdi': 'material-design-icons.css'
+    })
   ],
   declarations: [
     TmAppComponent,

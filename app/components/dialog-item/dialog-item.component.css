@@ -1,3 +1,61 @@
 .root {
+  height: 64;
   background-color: #fff;
+  padding: 0 16;
+}
+
+.indicator {
+  top: 0;
+  right: 0;
+  margin-top: 2;
+  margin-left: 36;
+  width: 10;
+  height: 10;
+  border-radius: 50;
+  border-width: 2px;
+  border-color: #fff;
+}
+
+.indicator--online {
+  background-color: #00ff00;
+}
+
+.indicator--offline {
+  background-color: #e91e63;
+}
+
+.content {
+  padding: 0 8;
+}
+
+.name {
+  font-size: 14;
+  color: #000;
+  opacity: 0.87;
+  font-weight: 500;
+}
+
+.firstname {
+  margin-right: 4;
+  text-transform: capitalize;
+}
+
+.lastname {
+  text-transform: capitalize;
+}
+
+.message {
+  opacity: 0.58;
+}
+
+.icon {
+  margin-right: 4px;
+  color: #512da8;
+  opacity: 0.58;
+}
+
+.timestamp {
+  width: 64;
+  font-size: 12;
+  opacity: 0.58;
 }

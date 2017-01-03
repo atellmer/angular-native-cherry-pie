@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { renderDeviceTemplate } from '../../shared/device';
 import { FakeUserService } from '../../shared/fake-user.service';
-import { IDialog } from '../../shared/models/dialog-item';
+import { IDialog } from '../../shared/models/dialog-item.model';
 
 
 const phoneTemplUrl = 'panel.component.phone.html';
@@ -21,23 +21,56 @@ export class TmPanelComponent implements OnInit {
 
   ngOnInit() {
     this.fakeUserService
-      .getFakeUser({results: 10})
+      .getFakeUser({ results: 10 })
       .map(res => {
-        return res.results.map(item => {
-          const dialog: IDialog = {
-            id: item.login.salt,
-            name: {
-              first: item.name.first,
-              last: item.name.last
+        return res.results.map((item, index) => {
+          return {
+            id: index,
+            user: {
+              id: item.login.salt,
+                name: {
+                  first: item.name.first,
+                  last: item.name.last
+                },
+              avatar: {
+                thumbnail: item.picture.thumbnail
+              },
+              online: false
             },
-            avatar: item.picture.thumbnail,
-            message: 'random text message',
-            timestamp: new Date(),
-            online: true,
-            newMessageCount: 5
+            message: {
+              from: {
+                id: item.login.salt,
+                name: {
+                  first: item.name.first,
+                  last: item.name.last
+                },
+                avatar: {
+                  thumbnail: item.picture.thumbnail
+                },
+                online: false
+              },
+              to: {
+                id: item.login.salt,
+                name: {
+                  first: item.name.first,
+                  last: item.name.last
+                },
+                avatar: {
+                  thumbnail: item.picture.thumbnail
+                },
+                online: false
+              },
+              value: {
+                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+              },
+              status: {
+                delivered: false,
+                read: true,
+                new: false
+              },
+              timestamp: new Date()
+            }
           };
-
-          return dialog;
         });
       })
       .subscribe((res: Array<IDialog>) => {
