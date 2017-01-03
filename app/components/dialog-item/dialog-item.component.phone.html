@@ -1,9 +1,61 @@
-<StackLayout class="root">
-  <tm-avatar
-    width="48"
-    height="48"
-    [path]="dialog.avatar">
-  </tm-avatar>
-  <Label [text]="dialog.name.first" textWrap="true"></Label>
-  <Label [text]="dialog.name.last" textWrap="true"></Label>
+<StackLayout class="root" verticalAlignment="center">
+  <GridLayout rows="auto" columns="auto, *">
+    <AbsoluteLayout row="0" col="0">
+      <tm-avatar
+        top="0"
+        left="0"
+        width="48"
+        height="48"
+        [path]="dialog.user.avatar.thumbnail">
+      </tm-avatar>
+      <Label 
+        [ngClass]="{
+          'indicator--online': dialog.user.online,
+          'indicator--offline': !dialog.user.online}"
+        class="indicator">
+      </Label>
+    </AbsoluteLayout>
+    <GridLayout
+      class="content"
+      rows="auto, auto"
+      columns="*, auto, auto"
+      row="0"
+      col="1">
+      <WrapLayout
+        class="name"
+        row="0"
+        col="0">
+        <Label [text]="dialog.user.name.first"
+          class="firstname"
+          textWrap="true">
+        </Label>
+        <Label [text]="dialog.user.name.last"
+          class="lastname"
+          textWrap="true">
+        </Label>
+      </WrapLayout>
+      <WrapLayout row="0" col="2">
+        <Label
+          *ngIf="dialog.message.status.delivered"
+          class="mdi icon" [text]="'mdi-done' | fonticon">
+        </Label>
+        <Label
+          *ngIf="dialog.message.status.read"
+          class="mdi icon" [text]="'mdi-done-all' | fonticon">
+        </Label>
+        <Label
+          class="timestamp"
+          textWrap="false"
+          [text]="dialog.message.timestamp | date">
+        </Label>
+      </WrapLayout>
+      <Label [text]="dialog.message.value.text"
+        colSpan="3"
+        row="1"
+        col="0"
+        class="message"
+        textWrap="false">
+      </Label>
+    </GridLayout>
+  </GridLayout>
 </StackLayout>

@@ -1,11 +1,9 @@
 ﻿@import '~/css/core.light.css'; 
-
 @import url('~/platform.css');
 
 
-.material-icon {
-	font-size: 32;
-	font-family: 'Material-Design-Iconic-Font';
+.mdi {
+  font-family: 'Material Icons', 'MaterialIcons-Regular';
 }
 
 .debug {
