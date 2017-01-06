@@ -10,17 +10,20 @@ import { NativeScriptRouterModule } from 'nativescript-angular/router';
 import { TNSFontIconModule } from 'nativescript-ng2-fonticon';
 
 // Routes
-import { ROUTES } from './app.routes';
+import { appRoutes } from './app.routes';
+
+// Modules
+import { UIModule } from './components/ui-module/ui.module';
 
 // Components
-import { TmPhoneLayoutComponent } from './components/phone-layout';
-import { TmTabletLayoutComponent } from './components/tablet-layout';
-import { TmAppComponent } from './app.component';
-import { TmAppbarComponent } from './components/appbar';
-import { TmPanelComponent } from './components/panel';
-import { TmCanvasComponent } from './components/canvas';
-import { TmAvatarComponent } from './components/avatar';
+import { PhoneLayoutComponent } from './components/phone-layout';
+import { TabletLayoutComponent } from './components/tablet-layout';
+import { AppComponent } from './app.component';
+import { AppbarComponent } from './components/appbar';
+import { PanelComponent } from './components/panel';
+import { CanvasComponent } from './components/canvas';
 import { DialogItemComponent } from './components/dialog-item';
+import { DumpComponent } from './components/dump/dump.component';
 
 // Services
 import { FakeUserService } from './shared/fake-user.service';
@@ -32,22 +35,23 @@ import { FakeUserService } from './shared/fake-user.service';
     NativeScriptHttpModule,
     NativeScriptFormsModule,
     NativeScriptRouterModule,
-    NativeScriptRouterModule.forRoot(ROUTES),
+    NativeScriptRouterModule.forRoot(appRoutes),
     TNSFontIconModule.forRoot({
       'mdi': 'material-design-icons.css'
-    })
+    }),
+    UIModule
   ],
   declarations: [
-    TmAppComponent,
-    TmPhoneLayoutComponent,
-    TmTabletLayoutComponent,
-    TmAppbarComponent,
-    TmPanelComponent,
-    TmCanvasComponent,
-    TmAvatarComponent,
-    DialogItemComponent
+    AppComponent,
+    PhoneLayoutComponent,
+    TabletLayoutComponent,
+    AppbarComponent,
+    PanelComponent,
+    CanvasComponent,
+    DialogItemComponent,
+    DumpComponent
   ],
   providers: [FakeUserService],
-  bootstrap: [TmAppComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

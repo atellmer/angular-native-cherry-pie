@@ -14,14 +14,14 @@ const tabletTemplUrl = 'panel.component.tablet.html';
   templateUrl: renderDeviceTemplate(phoneTemplUrl, tabletTemplUrl),
   styleUrls: ['panel.component.css']
 })
-export class TmPanelComponent implements OnInit {
+export class PanelComponent implements OnInit {
   public dialogs: Array<IDialog>;
 
   constructor(private fakeUserService: FakeUserService) { }
 
   ngOnInit() {
     this.fakeUserService
-      .getFakeUser({ results: 10 })
+      .getFakeUser({ results: 20 })
       .map(res => {
         return res.results.map((item, index) => {
           return {

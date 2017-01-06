@@ -1,0 +1,11 @@
+.root {
+  min-width: 16;
+  min-height: 16;
+  text-align: center;
+  padding: 0 2;
+  border-radius: 6;
+  background-color: #e91e63;
+  color: #fff;
+  font-size: 12;
+  font-weight: 300;
+}

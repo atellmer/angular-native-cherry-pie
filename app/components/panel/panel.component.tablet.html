@@ -1,3 +1,9 @@
 <DockLayout class="panel panel--tablet">
-  <Label text="I am panel on tablet" textWrap="true"></Label>
+  <ListView [items]="dialogs" separatorColor="transparent">
+    <template let-dialog="item">
+      <StackLayout [nsRouterLink]="['/tablet/canvas/', dialog.id]">
+        <tm-dialog-item [dialog]="dialog"></tm-dialog-item>
+      </StackLayout>
+    </template>
+  </ListView>
 </DockLayout>
