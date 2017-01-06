@@ -5,15 +5,18 @@ import	{	CommonModule	}	from	'@angular/common';
 
 // Components
 import { AvatarComponent } from './avatar/avatar.component';
+import { BadgeComponent } from './badge/badge.component';
 
 
 @NgModule({
   imports: [CommonModule],
   exports: [
-    AvatarComponent
+    AvatarComponent,
+    BadgeComponent
   ],
   declarations: [
-    AvatarComponent
+    AvatarComponent,
+    BadgeComponent
   ],
   providers: [],
 })

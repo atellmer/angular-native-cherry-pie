@@ -12,37 +12,36 @@
         [ngClass]="{
           'indicator--online': dialog.user.online,
           'indicator--offline': !dialog.user.online}"
-        class="indicator">
+        class="indicator indicator--phone">
       </Label>
     </AbsoluteLayout>
     <GridLayout
-      class="content"
+      class="content content--phone"
       rows="auto, auto"
       columns="*, auto, auto"
       row="0"
       col="1">
-      <WrapLayout
-        class="name"
-        row="0"
-        col="0">
-        <Label [text]="dialog.user.name.first"
-          class="firstname"
-          textWrap="true">
-        </Label>
-        <Label [text]="dialog.user.name.last"
-          class="lastname"
-          textWrap="true">
+      <WrapLayout class="name name--phone" row="0" col="0">
+        <Label
+          text="{{ dialog.user.name.first }} {{ dialog.user.name.last }}"
+          class="name-label"
+          textWrap="false">
         </Label>
       </WrapLayout>
       <WrapLayout row="0" col="2">
         <Label
           *ngIf="dialog.message.status.delivered"
-          class="mdi icon" [text]="'mdi-done' | fonticon">
+          class="mdi icon icon--phone" [text]="'mdi-done' | fonticon">
         </Label>
         <Label
           *ngIf="dialog.message.status.read"
-          class="mdi icon" [text]="'mdi-done-all' | fonticon">
+          class="mdi icon icon--phone" [text]="'mdi-done-all' | fonticon">
         </Label>
+        <WrapLayout
+          *ngIf="dialog.message.status.new"
+          class="l-badge">
+          <tm-badge count="5"></tm-badge>
+        </WrapLayout>
         <Label
           class="timestamp"
           textWrap="false"
@@ -53,7 +52,7 @@
         colSpan="3"
         row="1"
         col="0"
-        class="message"
+        class="message message--phone"
         textWrap="false">
       </Label>
     </GridLayout>

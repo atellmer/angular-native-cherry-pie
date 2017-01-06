@@ -1,1 +1,60 @@
-<div>this is dialog item tablet</div>
+<StackLayout class="root root--tablet" verticalAlignment="center">
+  <GridLayout rows="auto" columns="auto, *">
+    <AbsoluteLayout row="0" col="0">
+      <tm-avatar
+        top="0"
+        left="0"
+        width="48"
+        height="48"
+        [path]="dialog.user.avatar.thumbnail">
+      </tm-avatar>
+      <Label 
+        [ngClass]="{
+          'indicator--online': dialog.user.online,
+          'indicator--offline': !dialog.user.online}"
+        class="indicator indicator--tablet">
+      </Label>
+    </AbsoluteLayout>
+    <GridLayout
+      class="content content--tablet"
+      rows="auto, auto"
+      columns="*, auto, auto"
+      row="0"
+      col="1">
+      <WrapLayout class="name name--tablet" row="0" col="0">
+        <Label
+          text="{{ dialog.user.name.first }} {{ dialog.user.name.last }}"
+          class="name-label"
+          textWrap="false">
+        </Label>
+      </WrapLayout>
+      <WrapLayout row="0" col="2">
+        <Label
+          *ngIf="dialog.message.status.delivered"
+          class="mdi icon icon--tablet" [text]="'mdi-done' | fonticon">
+        </Label>
+        <Label
+          *ngIf="dialog.message.status.read"
+          class="mdi icon icon--tablet" [text]="'mdi-done-all' | fonticon">
+        </Label>
+        <WrapLayout
+          *ngIf="dialog.message.status.new"
+          class="l-badge">
+          <tm-badge count="5"></tm-badge>
+        </WrapLayout>
+        <Label
+          class="timestamp"
+          textWrap="false"
+          [text]="dialog.message.timestamp | date">
+        </Label>
+      </WrapLayout>
+      <Label [text]="dialog.message.value.text"
+        colSpan="3"
+        row="1"
+        col="0"
+        class="message message--tablet"
+        textWrap="false">
+      </Label>
+    </GridLayout>
+  </GridLayout>
+</StackLayout>
