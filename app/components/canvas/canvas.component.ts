@@ -11,7 +11,7 @@ const tabletTemplUrl = 'canvas.component.tablet.html';
   templateUrl: renderDeviceTemplate(phoneTemplUrl, tabletTemplUrl),
   styleUrls: ['canvas.component.css']
 })
-export class TmCanvasComponent implements OnInit {
+export class CanvasComponent implements OnInit {
   constructor() { }
 
   ngOnInit() { }

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'phone-layout.component.html',
   styleUrls: ['phone-layout.component.css']
 })
-export class TmPhoneLayoutComponent implements OnInit {
+export class PhoneLayoutComponent implements OnInit {
 
   constructor() { }
 

@@ -13,7 +13,7 @@ const tabletTemplUrl = 'appbar.component.tablet.html';
   templateUrl: renderDeviceTemplate(phoneTemplUrl, tabletTemplUrl),
   styleUrls: ['appbar.component.css']
 })
-export class TmAppbarComponent implements OnInit {
+export class AppbarComponent implements OnInit {
   public userAvatar: string;
 
   constructor(private fakeUserService: FakeUserService) { }

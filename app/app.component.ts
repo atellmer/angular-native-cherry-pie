@@ -7,7 +7,7 @@ import { TNSFontIconService } from 'nativescript-ng2-fonticon';
 	selector: 'tm-app',
 	template: '<page-router-outlet></page-router-outlet>'
 })
-export class TmAppComponent implements OnInit {
+export class AppComponent implements OnInit {
 
   constructor(private fonticon: TNSFontIconService) { }
 

@@ -14,7 +14,7 @@ const tabletTemplUrl = 'panel.component.tablet.html';
   templateUrl: renderDeviceTemplate(phoneTemplUrl, tabletTemplUrl),
   styleUrls: ['panel.component.css']
 })
-export class TmPanelComponent implements OnInit {
+export class PanelComponent implements OnInit {
   public dialogs: Array<IDialog>;
 
   constructor(private fakeUserService: FakeUserService) { }

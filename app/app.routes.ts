@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
 
 import { isPhone, isTablet } from './shared/device';
-import { TmPhoneLayoutComponent } from './components/phone-layout';
-import { TmTabletLayoutComponent } from './components/tablet-layout';
-import { TmPanelComponent } from './components/panel';
-import { TmCanvasComponent } from './components/canvas';
+import { PhoneLayoutComponent } from './components/phone-layout';
+import { TabletLayoutComponent } from './components/tablet-layout';
+import { PanelComponent } from './components/panel';
+import { CanvasComponent } from './components/canvas';
 
 
 let routes: Routes = [];
@@ -13,11 +13,11 @@ if (isPhone()) {
   routes = [
     {
       path: '',
-      component: TmPhoneLayoutComponent,
+      component: PhoneLayoutComponent,
       children: [
         {
           path: 'phone/panel',
-          component: TmPanelComponent
+          component: PanelComponent
         },
         {
           path: 'phone/canvas',
@@ -27,7 +27,7 @@ if (isPhone()) {
               children: [
                 {
                   path: '',
-                  component: TmCanvasComponent
+                  component: CanvasComponent
                 }
               ]
             }
@@ -51,7 +51,7 @@ if (isTablet()) {
   routes = [
     {
       path: '',
-      component: TmTabletLayoutComponent
+      component: TabletLayoutComponent
     }
   ];
 }

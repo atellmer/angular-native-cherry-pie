@@ -12,14 +12,16 @@ import { TNSFontIconModule } from 'nativescript-ng2-fonticon';
 // Routes
 import { ROUTES } from './app.routes';
 
+// Modules
+import { UIModule } from './components/ui-module/ui.module';
+
 // Components
-import { TmPhoneLayoutComponent } from './components/phone-layout';
-import { TmTabletLayoutComponent } from './components/tablet-layout';
-import { TmAppComponent } from './app.component';
-import { TmAppbarComponent } from './components/appbar';
-import { TmPanelComponent } from './components/panel';
-import { TmCanvasComponent } from './components/canvas';
-import { TmAvatarComponent } from './components/avatar';
+import { PhoneLayoutComponent } from './components/phone-layout';
+import { TabletLayoutComponent } from './components/tablet-layout';
+import { AppComponent } from './app.component';
+import { AppbarComponent } from './components/appbar';
+import { PanelComponent } from './components/panel';
+import { CanvasComponent } from './components/canvas';
 import { DialogItemComponent } from './components/dialog-item';
 
 // Services
@@ -35,19 +37,19 @@ import { FakeUserService } from './shared/fake-user.service';
     NativeScriptRouterModule.forRoot(ROUTES),
     TNSFontIconModule.forRoot({
       'mdi': 'material-design-icons.css'
-    })
+    }),
+    UIModule
   ],
   declarations: [
-    TmAppComponent,
-    TmPhoneLayoutComponent,
-    TmTabletLayoutComponent,
-    TmAppbarComponent,
-    TmPanelComponent,
-    TmCanvasComponent,
-    TmAvatarComponent,
+    AppComponent,
+    PhoneLayoutComponent,
+    TabletLayoutComponent,
+    AppbarComponent,
+    PanelComponent,
+    CanvasComponent,
     DialogItemComponent
   ],
   providers: [FakeUserService],
-  bootstrap: [TmAppComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
