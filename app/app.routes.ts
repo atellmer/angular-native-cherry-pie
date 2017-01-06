@@ -52,8 +52,6 @@ if (isPhone()) {
           path: '**',
           redirectTo: 'phone/panel'
         }
-          ]
-        }
       ]
     },
     {
