@@ -10,7 +10,7 @@ import { NativeScriptRouterModule } from 'nativescript-angular/router';
 import { TNSFontIconModule } from 'nativescript-ng2-fonticon';
 
 // Routes
-import { ROUTES } from './app.routes';
+import { appRoutes } from './app.routes';
 
 // Modules
 import { UIModule } from './components/ui-module/ui.module';
@@ -23,6 +23,7 @@ import { AppbarComponent } from './components/appbar';
 import { PanelComponent } from './components/panel';
 import { CanvasComponent } from './components/canvas';
 import { DialogItemComponent } from './components/dialog-item';
+import { DumpComponent } from './components/dump/dump.component';
 
 // Services
 import { FakeUserService } from './shared/fake-user.service';
@@ -34,7 +35,7 @@ import { FakeUserService } from './shared/fake-user.service';
     NativeScriptHttpModule,
     NativeScriptFormsModule,
     NativeScriptRouterModule,
-    NativeScriptRouterModule.forRoot(ROUTES),
+    NativeScriptRouterModule.forRoot(appRoutes),
     TNSFontIconModule.forRoot({
       'mdi': 'material-design-icons.css'
     }),
@@ -47,7 +48,8 @@ import { FakeUserService } from './shared/fake-user.service';
     AppbarComponent,
     PanelComponent,
     CanvasComponent,
-    DialogItemComponent
+    DialogItemComponent,
+    DumpComponent
   ],
   providers: [FakeUserService],
   bootstrap: [AppComponent]

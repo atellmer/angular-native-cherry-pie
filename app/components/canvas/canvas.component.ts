@@ -1,5 +1,11 @@
+// Core
 import { Component, OnInit } from '@angular/core';
+import {
+  ActivatedRoute,
+  Params
+} from '@angular/router';
 import { renderDeviceTemplate } from '../../shared/device';
+
 
 
 const phoneTemplUrl = 'canvas.component.phone.html';
@@ -12,7 +18,16 @@ const tabletTemplUrl = 'canvas.component.tablet.html';
   styleUrls: ['canvas.component.css']
 })
 export class CanvasComponent implements OnInit {
-  constructor() { }
+  public currentDialog: number;
 
-  ngOnInit() { }
+  constructor(
+    private route: ActivatedRoute
+  ) { }
+
+  ngOnInit() {
+    this.route.params
+    .subscribe((params: Params) => {
+      this.currentDialog = +params['id'];
+    });
+  }
 }
