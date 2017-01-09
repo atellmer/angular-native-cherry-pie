@@ -1,7 +1,7 @@
 <DockLayout class="panel panel--tablet">
   <ListView [items]="dialogs" separatorColor="transparent">
     <template let-dialog="item">
-      <StackLayout [nsRouterLink]="['/tablet/canvas/', dialog.id]">
+      <StackLayout [nsRouterLink]="['/panel/canvas/', dialog.id]">
         <tm-dialog-item [dialog]="dialog"></tm-dialog-item>
       </StackLayout>
     </template>

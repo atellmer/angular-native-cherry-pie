@@ -18,45 +18,37 @@ if (isPhone()) {
   routes = [
     {
       path: '',
-      redirectTo: 'phone',
+      redirectTo: 'panel',
       pathMatch: 'full'
     },
     {
-      path: 'phone',
+      path: 'panel',
       component: PhoneLayoutComponent,
       children: [
         {
           path: '',
           component: PanelComponent
-        },
+        }
+      ]
+    },
+    {
+      path: 'canvas',
+      component: PhoneLayoutComponent,
+      children: [
         {
-          path: 'canvas',
+          path: ':id',
           children: [
             {
-              path: ':id',
-              children: [
-                {
-                  path: '',
-                  component: CanvasComponent
-                }
-              ]
+              path: '',
+              component: CanvasComponent
             }
           ]
-        },
-        {
-          path: '',
-          redirectTo: 'phone/panel',
-          pathMatch: 'full'
-        },
-        {
-          path: '**',
-          redirectTo: 'phone/panel'
         }
       ]
     },
     {
       path: '**',
-      redirectTo: 'phone'
+      redirectTo: 'panel'
     }
   ];
 }
@@ -65,11 +57,11 @@ if (isTablet()) {
   routes = [
     {
       path: '',
-      redirectTo: 'tablet',
+      redirectTo: 'panel',
       pathMatch: 'full'
     },
     {
-      path: 'tablet',
+      path: 'panel',
       component: TabletLayoutComponent,
       children: [
         {
@@ -94,7 +86,7 @@ if (isTablet()) {
     },
     {
       path: '**',
-      redirectTo: 'tablet'
+      redirectTo: 'panel'
     }
   ];
 }
