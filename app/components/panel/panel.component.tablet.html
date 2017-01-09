@@ -1,9 +1,31 @@
-<DockLayout class="panel panel--tablet">
-  <ListView [items]="dialogs" separatorColor="transparent">
-    <template let-dialog="item">
-      <StackLayout [nsRouterLink]="['/panel/canvas/', dialog.id]">
-        <tm-dialog-item [dialog]="dialog"></tm-dialog-item>
-      </StackLayout>
-    </template>
-  </ListView>
-</DockLayout>
+<CardView
+  shadowColor="#FE00FC"
+  elevation="10"
+  radius="-1">
+  <DockLayout class="panel panel--tablet">
+    <StackLayout orientation="vertical">
+      <tm-search-bar></tm-search-bar>
+      <TabView
+        tabsBackgroundColor="#503276"
+        tabTextColor="#FFF"
+        selectedTabTextColor="#FFF">
+        <template tabItem title="Все">
+          <StackLayout>
+            <ListView [items]="dialogs" separatorColor="transparent">
+              <template let-dialog="item">
+                <StackLayout [nsRouterLink]="['/panel/canvas/', dialog.id]" nsRouterLinkActive="link-active">
+                  <tm-dialog-item [dialog]="dialog"></tm-dialog-item>
+                </StackLayout>
+              </template>
+            </ListView>
+          </StackLayout>
+        </template>
+        <template tabItem title="Новые">
+          <StackLayout>
+            <Label text="Second tab item"></Label>
+          </StackLayout>
+        </template>
+      </TabView>
+    </StackLayout>
+  </DockLayout>
+</CardView>

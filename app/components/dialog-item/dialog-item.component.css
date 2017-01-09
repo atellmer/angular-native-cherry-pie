@@ -3,13 +3,9 @@
   padding: 0 16;
 }
 
-.root--phone {
-  background-color: #fff;
-}
+.root--phone {}
 
-.root--tablet {
-  background-color: #653e96;
-}
+.root--tablet {}
 
 .indicator {
   border-radius: 50;

@@ -1,8 +1,12 @@
 .panel--phone {
-	background-color: #fff;
+	background-color: #FFF;
 }
 
 .panel--tablet {
 	width: 300;
 	background-color: #653e96;
+}
+
+.link-active {
+  background-color: #8c6bf1;
 }

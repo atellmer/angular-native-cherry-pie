@@ -1,7 +1,10 @@
 <StackLayout class="panel panel--phone">
   <ListView [items]="dialogs">
     <template let-dialog="item">
-      <StackLayout [nsRouterLink]="['/canvas/', dialog.id]" pageTransition="slide">
+      <StackLayout
+        [nsRouterLink]="['/canvas/', dialog.id]"
+        nsRouterLinkActive="link-active"
+        pageTransition="slideLeft">
         <tm-dialog-item [dialog]="dialog"></tm-dialog-item>
       </StackLayout>
     </template>
