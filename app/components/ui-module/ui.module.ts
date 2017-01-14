@@ -9,18 +9,16 @@ import { BadgeComponent } from './badge/badge.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 
 
+const COMPONENTS = [
+  AvatarComponent,
+  BadgeComponent,
+  SearchBarComponent
+];
+
 @NgModule({
   imports: [CommonModule],
-  exports: [
-    AvatarComponent,
-    BadgeComponent,
-    SearchBarComponent
-  ],
-  declarations: [
-    AvatarComponent,
-    BadgeComponent,
-    SearchBarComponent
-  ],
+  exports: [COMPONENTS],
+  declarations: [COMPONENTS],
   providers: [],
 })
 export class UIModule { }

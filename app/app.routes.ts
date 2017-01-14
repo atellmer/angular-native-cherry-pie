@@ -1,13 +1,16 @@
 // Core
 import { Routes } from '@angular/router';
 
+
 // Utils
 import { isPhone, isTablet } from './shared/device';
 
+// Containers
+import { PanelContainerComponent } from './containers/panel';
+
 // Components
-import { PhoneLayoutComponent } from './components/phone-layout';
-import { TabletLayoutComponent } from './components/tablet-layout';
-import { PanelComponent } from './components/panel';
+import { PhoneLayoutComponent } from './layouts/phone';
+import { TabletLayoutComponent } from './layouts/tablet';
 import { CanvasComponent } from './components/canvas';
 import { DumpComponent } from './components/dump/dump.component';
 
@@ -27,7 +30,7 @@ if (isPhone()) {
       children: [
         {
           path: '',
-          component: PanelComponent
+          component: PanelContainerComponent
         }
       ]
     },

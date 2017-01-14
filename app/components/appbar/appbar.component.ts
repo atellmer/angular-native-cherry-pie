@@ -1,7 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  ChangeDetectionStrategy
+} from '@angular/core';
 
 import { renderDeviceTemplate } from '../../shared/device';
-import { FakeUserService } from '../../shared/fake-user.service';
+
+import { Observable } from 'rxjs';
+import { IUser } from '../../shared/models/user.model';
 
 
 const phoneTemplUrl = 'appbar.component.phone.html';
@@ -11,18 +18,13 @@ const tabletTemplUrl = 'appbar.component.tablet.html';
   moduleId: module.id,
   selector: 'tm-appbar',
   templateUrl: renderDeviceTemplate(phoneTemplUrl, tabletTemplUrl),
-  styleUrls: ['appbar.component.css']
+  styleUrls: ['appbar.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppbarComponent implements OnInit {
-  public userAvatar: string;
+  @Input() me: IUser;
 
-  constructor(private fakeUserService: FakeUserService) { }
+  constructor() { }
 
-  ngOnInit() {
-    this.fakeUserService
-      .getFakeUser({results: 1})
-      .subscribe((res: any) => {
-        this.userAvatar = res.results[0].picture.thumbnail;
-      });
-  }
+  ngOnInit() { }
 }

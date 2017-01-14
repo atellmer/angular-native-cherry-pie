@@ -7,6 +7,7 @@ import { NativeScriptModule } from 'nativescript-angular/platform';
 import { NativeScriptHttpModule } from 'nativescript-angular/http';
 import { NativeScriptFormsModule } from 'nativescript-angular/forms';
 import { NativeScriptRouterModule } from 'nativescript-angular/router';
+import { StoreModule } from '@ngrx/store';
 import { TNSFontIconModule } from 'nativescript-ng2-fonticon';
 
 // Routes
@@ -15,9 +16,13 @@ import { appRoutes } from './app.routes';
 // Modules
 import { UIModule } from './components/ui-module/ui.module';
 
+// Containers
+import { PanelContainerComponent } from './containers/panel';
+import { AppbarContainerComponent } from './containers/appbar';
+
 // Components
-import { PhoneLayoutComponent } from './components/phone-layout';
-import { TabletLayoutComponent } from './components/tablet-layout';
+import { PhoneLayoutComponent } from './layouts/phone';
+import { TabletLayoutComponent } from './layouts/tablet';
 import { AppComponent } from './app.component';
 import { AppbarComponent } from './components/appbar';
 import { PanelComponent } from './components/panel';
@@ -28,6 +33,9 @@ import { DumpComponent } from './components/dump/dump.component';
 // Services
 import { FakeUserService } from './shared/fake-user.service';
 
+import { UserActions } from './actions/user';
+import { rootReducer } from './reducers';
+
 
 @NgModule({
   imports: [
@@ -36,6 +44,7 @@ import { FakeUserService } from './shared/fake-user.service';
     NativeScriptFormsModule,
     NativeScriptRouterModule,
     NativeScriptRouterModule.forRoot(appRoutes),
+    StoreModule.provideStore(rootReducer),
     TNSFontIconModule.forRoot({
       'mdi': 'material-design-icons.css'
     }),
@@ -49,9 +58,14 @@ import { FakeUserService } from './shared/fake-user.service';
     PanelComponent,
     CanvasComponent,
     DialogItemComponent,
-    DumpComponent
+    DumpComponent,
+    PanelContainerComponent,
+    AppbarContainerComponent
   ],
-  providers: [FakeUserService],
+  providers: [
+    FakeUserService,
+    UserActions
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
