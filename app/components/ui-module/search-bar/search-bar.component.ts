@@ -11,4 +11,16 @@ export class SearchBarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() { }
+
+  handleSearchLayoutLoaded(ev) {
+    if (ev.object.android) {
+      ev.object.android.setFocusableInTouchMode(true);
+    }
+  }
+
+  handleSearchBarLoaded(ev) {
+    if (ev.object.android) {
+      ev.object.android.clearFocus();
+    }
+  }
 }

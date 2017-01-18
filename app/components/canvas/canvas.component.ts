@@ -1,11 +1,13 @@
 // Core
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
 import {
   ActivatedRoute,
   Params
 } from '@angular/router';
 import { renderDeviceTemplate } from '../../shared/device';
-
 
 
 const phoneTemplUrl = 'canvas.component.phone.html';

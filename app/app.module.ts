@@ -29,6 +29,7 @@ import { PanelComponent } from './components/panel';
 import { CanvasComponent } from './components/canvas';
 import { DialogItemComponent } from './components/dialog-item';
 import { DumpComponent } from './components/dump/dump.component';
+import { MessagePanelComponent } from './components/message-panel/message-panel.component';
 
 // Services
 import { FakeUserService } from './shared/fake-user.service';
@@ -60,7 +61,8 @@ import { rootReducer } from './reducers';
     DialogItemComponent,
     DumpComponent,
     PanelContainerComponent,
-    AppbarContainerComponent
+    AppbarContainerComponent,
+    MessagePanelComponent
   ],
   providers: [
     FakeUserService,

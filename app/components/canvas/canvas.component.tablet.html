@@ -1,8 +1,11 @@
 <DockLayout class="canvas">
-  <StackLayout>
-    <Label
-      text="Current Dialog: {{ currentDialog }}"
-      textWrap="true">
-    </Label>
-  </StackLayout>
+  <FlexboxLayout class="flex">
+    <WrapLayout>
+      <Label
+        text="Current Dialog: {{ currentDialog }}"
+        textWrap="true">
+      </Label>
+    </WrapLayout>
+    <tm-message-panel></tm-message-panel>
+  </FlexboxLayout>
 </DockLayout>

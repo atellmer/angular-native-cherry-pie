@@ -1,0 +1,11 @@
+.root {
+  justify-content: center;
+  align-items: center;
+  width: 48;
+  height: 48;
+}
+
+.button {
+  font-size: 24;
+  color: #000;
+}

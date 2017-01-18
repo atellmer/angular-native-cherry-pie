@@ -7,12 +7,14 @@ import { CommonModule } from '@angular/common';
 import { AvatarComponent } from './avatar/avatar.component';
 import { BadgeComponent } from './badge/badge.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { IconButtonComponent } from './icon-button/icon-button.component';
 
 
 const COMPONENTS = [
   AvatarComponent,
   BadgeComponent,
-  SearchBarComponent
+  SearchBarComponent,
+  IconButtonComponent
 ];
 
 @NgModule({
