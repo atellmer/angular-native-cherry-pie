@@ -17,6 +17,7 @@
     "build": "tns build android",
     "lint": "tslint \"app/**/*.ts\"",
     "clean": "tns platform remove android && tns platform add android",
+    "precommit": "npm run lint",
     "prepush": "npm run lint"
   },
   "dependencies": {
