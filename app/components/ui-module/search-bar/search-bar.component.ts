@@ -43,7 +43,7 @@ export class SearchBarComponent implements OnInit {
     this.resetTextField();
   }
 
-  handleChange() { 
+  handleChange() {
     console.log('change: ', this.searchTerm);
   }
 
