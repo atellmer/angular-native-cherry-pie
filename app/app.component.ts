@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TNSFontIconService } from 'nativescript-ng2-fonticon';
 
 
 @Component({
@@ -9,7 +8,7 @@ import { TNSFontIconService } from 'nativescript-ng2-fonticon';
 })
 export class AppComponent implements OnInit {
 
-  constructor(private fonticon: TNSFontIconService) { }
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 }

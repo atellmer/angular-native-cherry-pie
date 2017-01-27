@@ -34,6 +34,7 @@ import { MessagePanelComponent } from './components/message-panel/message-panel.
 // Services
 import { FakeUserService } from './shared/fake-user.service';
 
+// Store
 import { UserActions } from './actions/user';
 import { rootReducer } from './reducers';
 

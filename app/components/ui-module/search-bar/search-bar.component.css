@@ -1,4 +1,61 @@
+.root {
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #503276;
+}
+
 .search-bar {
-  background-color: #714d8d;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.15);
   color: #FFF;
+  margin: 0 16;
+  padding: 0 16;
+  border-radius: 3;
+  flex-grow: 1;
+  height: 42;
+}
+
+.text-field {
+  placeholder-color: #FFF;
+  flex-grow: 1;
+  background-color: transparent;
+  border-color: transparent;
+  margin-left: 4;
+}
+
+.icon {
+  font-size: 24;
+}
+
+.focus {
+  animation-name: focusAnimation;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes focusAnimation {
+  0% {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.20);
+  }
+}
+
+.blur {
+  animation-name: blurAnimation;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes blurAnimation {
+  0% {
+    background-color: rgba(255, 255, 255, 0.20);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
 }

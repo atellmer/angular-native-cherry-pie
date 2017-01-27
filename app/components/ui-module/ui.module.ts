@@ -1,6 +1,8 @@
 // Core
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NativeScriptFormsModule } from 'nativescript-angular/forms';
+import { TNSFontIconModule } from 'nativescript-ng2-fonticon';
 
 
 // Components
@@ -18,7 +20,13 @@ const COMPONENTS = [
 ];
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+    NativeScriptFormsModule,
+    TNSFontIconModule.forRoot({
+      'mdi': 'material-design-icons.css'
+    })
+  ],
   exports: [COMPONENTS],
   declarations: [COMPONENTS],
   providers: [],

@@ -1,8 +1,25 @@
-<StackLayout (loaded)="handleSearchLayoutLoaded($event)">
-  <SearchBar
-    hint="Поиск"
-    textFieldHintColor="#FFF"
-    (loaded)="handleSearchBarLoaded($event)"
-    class="search-bar">
-  </SearchBar>
-</StackLayout>
+<FlexboxLayout (loaded)="handleSearchLayoutLoaded($event)" class="root">
+  <FlexboxLayout #container class="search-bar">
+    <Label
+      class="mdi icon"
+      [text]="'mdi-search' | fonticon">
+    </Label>
+    <TextField
+      #textField
+      autocorrect="false"
+      autocapitalization="none"
+      hint="Поиск"
+      [(ngModel)]="searchTerm"
+      (ngModelChange)="handleChange($event)"
+      (loaded)="handleSearchBarLoaded($event)"
+      (tap)="handleBlurEmulate($event)"
+      (returnPress)="handleEnterPress()"
+      class="text-field">
+    </TextField>
+    <Label
+      (tap)="handleClearButton($event)"
+      class="mdi icon"
+      [text]="'mdi-close' | fonticon">
+    </Label>
+  </FlexboxLayout>
+</FlexboxLayout>
