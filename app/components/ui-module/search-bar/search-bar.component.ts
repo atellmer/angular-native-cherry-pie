@@ -16,7 +16,7 @@ import {
 export class SearchBarComponent implements OnInit {
   @ViewChild('container') container: ElementRef;
   @ViewChild('textField') textFiledRef: ElementRef;
-  public searchTerm: string = '';
+  public searchTerm = '';
 
   constructor(private renderer: Renderer) { }
 

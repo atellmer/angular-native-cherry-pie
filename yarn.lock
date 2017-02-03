@@ -823,15 +823,15 @@ timed-out@^3.0.0:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/timed-out/-/timed-out-3.1.3.tgz#95860bfcc5c76c277f8f8326fd0f5b2e20eba217"
 
-tns-core-modules-widgets@2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/tns-core-modules-widgets/-/tns-core-modules-widgets-2.4.0.tgz#95de9f147268e806d6cf6bc8761ca235dd194f73"
+tns-core-modules-widgets@2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/tns-core-modules-widgets/-/tns-core-modules-widgets-2.5.0.tgz#ff8cca002cc7a222cf0bc21cfcb93f29432f26ef"
 
-tns-core-modules@2.4.3:
-  version "2.4.3"
-  resolved "https://registry.yarnpkg.com/tns-core-modules/-/tns-core-modules-2.4.3.tgz#5e76aae1083fcf2af794a4ce6f0c3d7c35f0df56"
+tns-core-modules@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/tns-core-modules/-/tns-core-modules-2.5.0.tgz#25ebfa410a67fd34c86da8526633b071a0d756f7"
   dependencies:
-    tns-core-modules-widgets "2.4.0"
+    tns-core-modules-widgets "2.5.0"
 
 to-fast-properties@^1.0.1:
   version "1.0.2"
