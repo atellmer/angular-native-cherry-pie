@@ -2,37 +2,37 @@
 # yarn lockfile v1
 
 
-"@angular/common@2.2.1", "@angular/common@~2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@angular/common/-/common-2.2.1.tgz#ad7996a865b7b11fc315363827f2414a48c6589c"
+"@angular/common@2.4.3", "@angular/common@~2.4.3":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@angular/common/-/common-2.4.3.tgz#78d96bd2f8a1a105f635cd25e362ba5704b47f56"
 
-"@angular/compiler@2.2.1", "@angular/compiler@~2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-2.2.1.tgz#16e7faf588cf9121a0f6c16d0bae2830f4cafdc1"
+"@angular/compiler@2.4.3", "@angular/compiler@~2.4.3":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-2.4.3.tgz#76a41916f90eda66643107740c4a9ae45cb7a6c1"
 
-"@angular/core@2.2.1", "@angular/core@~2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-2.2.1.tgz#86fdc34a370a4fcfe84ed9de4b3c43548612919c"
+"@angular/core@2.4.3", "@angular/core@~2.4.3":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-2.4.3.tgz#a72a13bb9f01659b8388558cd6e3a570a8434b1c"
 
-"@angular/forms@2.2.1", "@angular/forms@~2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-2.2.1.tgz#0e7154acc5127c583b4b52c59eac45d672c29da4"
+"@angular/forms@2.4.3", "@angular/forms@~2.4.3":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-2.4.3.tgz#0b4f59b8074e3d0fe987781e0f2af1ca1eec212b"
 
-"@angular/http@2.2.1", "@angular/http@~2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@angular/http/-/http-2.2.1.tgz#1626884a6c5f0cc602ce9d81e7420fcc02db3353"
+"@angular/http@2.4.3", "@angular/http@~2.4.3":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@angular/http/-/http-2.4.3.tgz#d8afca7362efb010600fde02360e01e848579be6"
 
-"@angular/platform-browser-dynamic@2.2.1", "@angular/platform-browser-dynamic@~2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-2.2.1.tgz#561d32982fee4b68b474ba474c7f3c4d94bfeb6c"
+"@angular/platform-browser-dynamic@2.4.3", "@angular/platform-browser-dynamic@~2.4.3":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-2.4.3.tgz#d65cc9bc4487e2a86e2c6f6641c711fccfa90c5a"
 
-"@angular/platform-browser@2.2.1", "@angular/platform-browser@~2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-2.2.1.tgz#d51b36260089f3054e745efad05993523d5a5293"
+"@angular/platform-browser@2.4.3", "@angular/platform-browser@~2.4.3":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-2.4.3.tgz#eba8588d2fffc39d0b85a9180c297d9ca2f1f3a4"
 
-"@angular/router@3.2.1", "@angular/router@~3.2.1":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@angular/router/-/router-3.2.1.tgz#eeace722a5a222bd6b1379df7a5bc580ace093ca"
+"@angular/router@3.4.3", "@angular/router@~3.4.3":
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/@angular/router/-/router-3.4.3.tgz#19846caa1f87d9b83f005f45a2be15b6744db8fd"
 
 "@ngrx/core@^1.2.0":
   version "1.2.0"
@@ -64,7 +64,7 @@ app-root-path@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/app-root-path/-/app-root-path-2.0.1.tgz#cd62dcf8e4fd5a417efc664d2e5b10653c651b46"
 
-babel-code-frame@^6.20.0:
+babel-code-frame@^6.20.0, babel-code-frame@^6.3.13:
   version "6.20.0"
   resolved "https://registry.yarnpkg.com/babel-code-frame/-/babel-code-frame-6.20.0.tgz#b968f839090f9a8bc6d41938fb96cb84f7387b26"
   dependencies:
@@ -72,45 +72,55 @@ babel-code-frame@^6.20.0:
     esutils "^2.0.2"
     js-tokens "^2.0.0"
 
-babel-messages@^6.8.0:
-  version "6.8.0"
-  resolved "https://registry.yarnpkg.com/babel-messages/-/babel-messages-6.8.0.tgz#bf504736ca967e6d65ef0adb5a2a5f947c8e0eb9"
+babel-messages@^6.3.13:
+  version "6.22.0"
+  resolved "https://registry.yarnpkg.com/babel-messages/-/babel-messages-6.22.0.tgz#36066a214f1217e4ed4164867669ecb39e3ea575"
   dependencies:
-    babel-runtime "^6.0.0"
+    babel-runtime "^6.22.0"
 
-babel-runtime@^6.0.0, babel-runtime@^6.20.0:
-  version "6.20.0"
-  resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.20.0.tgz#87300bdcf4cd770f09bf0048c64204e17806d16f"
+babel-runtime@^5.0.0:
+  version "5.8.38"
+  resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-5.8.38.tgz#1c0b02eb63312f5f087ff20450827b425c9d4c19"
+  dependencies:
+    core-js "^1.0.0"
+
+babel-runtime@^6.22.0:
+  version "6.22.0"
+  resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.22.0.tgz#1cf8b4ac67c77a4ddb0db2ae1f74de52ac4ca611"
   dependencies:
     core-js "^2.4.0"
     regenerator-runtime "^0.10.0"
 
-babel-traverse@6.21.0:
-  version "6.21.0"
-  resolved "https://registry.yarnpkg.com/babel-traverse/-/babel-traverse-6.21.0.tgz#69c6365804f1a4f69eb1213f85b00a818b8c21ad"
+babel-traverse@6.4.5, babel-traverse@^6.4.5:
+  version "6.4.5"
+  resolved "https://registry.yarnpkg.com/babel-traverse/-/babel-traverse-6.4.5.tgz#84b95416ee0895f1e423cc59376f35bfb08884db"
   dependencies:
-    babel-code-frame "^6.20.0"
-    babel-messages "^6.8.0"
-    babel-runtime "^6.20.0"
-    babel-types "^6.21.0"
-    babylon "^6.11.0"
+    babel-code-frame "^6.3.13"
+    babel-messages "^6.3.13"
+    babel-runtime "^5.0.0"
+    babel-types "^6.4.5"
+    babylon "^6.4.5"
     debug "^2.2.0"
-    globals "^9.0.0"
+    globals "^8.3.0"
     invariant "^2.2.0"
-    lodash "^4.2.0"
+    lodash "^3.10.1"
+    repeating "^1.1.3"
 
-babel-types@6.21.0, babel-types@^6.21.0:
-  version "6.21.0"
-  resolved "https://registry.yarnpkg.com/babel-types/-/babel-types-6.21.0.tgz#314b92168891ef6d3806b7f7a917fdf87c11a4b2"
+babel-types@6.4.5, babel-types@^6.4.5:
+  version "6.4.5"
+  resolved "https://registry.yarnpkg.com/babel-types/-/babel-types-6.4.5.tgz#589b9c843882d46fd23454364cb11d91fedd3a34"
   dependencies:
-    babel-runtime "^6.20.0"
+    babel-runtime "^5.0.0"
+    babel-traverse "^6.4.5"
     esutils "^2.0.2"
-    lodash "^4.2.0"
+    lodash "^3.10.1"
     to-fast-properties "^1.0.1"
 
-babylon@6.14.1, babylon@^6.11.0:
-  version "6.14.1"
-  resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.14.1.tgz#956275fab72753ad9b3435d7afe58f8bf0a29815"
+babylon@6.4.5, babylon@^6.4.5:
+  version "6.4.5"
+  resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.4.5.tgz#ba23b94e16c46f4b618e1f2bf99efe384acb498a"
+  dependencies:
+    babel-runtime "^5.0.0"
 
 balanced-match@^0.4.1:
   version "0.4.2"
@@ -202,6 +212,10 @@ configstore@^2.0.0:
     uuid "^2.0.1"
     write-file-atomic "^1.1.2"
     xdg-basedir "^2.0.0"
+
+core-js@^1.0.0:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
 
 core-js@^2.4.0:
   version "2.4.1"
@@ -328,9 +342,9 @@ glob@~5.0.0:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-globals@^9.0.0:
-  version "9.14.0"
-  resolved "https://registry.yarnpkg.com/globals/-/globals-9.14.0.tgz#8859936af0038741263053b39d0e76ca241e4034"
+globals@^8.3.0:
+  version "8.18.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-8.18.0.tgz#93d4a62bdcac38cfafafc47d6b034768cb0ffcb4"
 
 got@^5.0.0:
   version "5.7.1"
@@ -468,9 +482,9 @@ lazy@1.0.11:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/lazy/-/lazy-1.0.11.tgz#daa068206282542c088288e975c297c1ae77b690"
 
-lodash@^4.2.0:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
+lodash@^3.10.1:
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
 loose-envify@^1.0.0:
   version "1.3.0"
@@ -510,24 +524,24 @@ ms@0.7.2:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765"
 
-nativescript-angular@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/nativescript-angular/-/nativescript-angular-1.2.0.tgz#0d5f8a3e1ed10bee414933d735306e2deee07787"
+nativescript-angular@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/nativescript-angular/-/nativescript-angular-1.4.0.tgz#6ae1afff48cc7165ffebdbd98cb135e5b53eaa92"
   dependencies:
-    "@angular/common" "~2.2.1"
-    "@angular/compiler" "~2.2.1"
-    "@angular/core" "~2.2.1"
-    "@angular/forms" "~2.2.1"
-    "@angular/http" "~2.2.1"
-    "@angular/platform-browser" "~2.2.1"
-    "@angular/platform-browser-dynamic" "~2.2.1"
-    "@angular/router" "~3.2.1"
-    nativescript-intl "~0.0.4"
+    "@angular/common" "~2.4.3"
+    "@angular/compiler" "~2.4.3"
+    "@angular/core" "~2.4.3"
+    "@angular/forms" "~2.4.3"
+    "@angular/http" "~2.4.3"
+    "@angular/platform-browser" "~2.4.3"
+    "@angular/platform-browser-dynamic" "~2.4.3"
+    "@angular/router" "~3.4.3"
+    nativescript-intl "~0.0.8"
     parse5 "1.3.2"
     punycode "1.3.2"
     querystring "0.2.0"
     reflect-metadata "~0.1.8"
-    rxjs "5.0.0-beta.12"
+    rxjs "~5.0.1"
     url "0.10.3"
 
 nativescript-cardview@^1.2.1:
@@ -543,9 +557,9 @@ nativescript-dev-android-snapshot@^0.*.*:
     semver "^5.1.0"
     shelljs "^0.6.0"
 
-nativescript-dev-typescript@^0.3.2:
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/nativescript-dev-typescript/-/nativescript-dev-typescript-0.3.5.tgz#cb531c39a8007624e092b1585d18da9f52c2b6e6"
+nativescript-dev-typescript@^0.3.5:
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/nativescript-dev-typescript/-/nativescript-dev-typescript-0.3.7.tgz#e9c982eeca2347349245d45b3f6ba2c18164050a"
   dependencies:
     nativescript-hook "^0.2.0"
 
@@ -560,7 +574,7 @@ nativescript-hook@^0.2.0, nativescript-hook@^0.2.1:
     glob "^6.0.1"
     mkdirp "^0.5.1"
 
-nativescript-intl@~0.0.4:
+nativescript-intl@~0.0.8:
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/nativescript-intl/-/nativescript-intl-0.0.10.tgz#2a310f07f627344f75db547177db18298d430b0e"
 
@@ -576,9 +590,9 @@ nativescript-ripple@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/nativescript-ripple/-/nativescript-ripple-1.1.0.tgz#ee3862df04bc173c2d0046c3c9ddeba83a938c95"
 
-nativescript-theme-core@^0.2.1:
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/nativescript-theme-core/-/nativescript-theme-core-0.2.6.tgz#ca27c5030a1619cc8148f436330af5d2d381f629"
+nativescript-theme-core@~1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/nativescript-theme-core/-/nativescript-theme-core-1.0.2.tgz#712e80b702316abaa4e7d738825573f9e6bae658"
 
 node-status-codes@^1.0.0:
   version "1.0.0"
@@ -743,6 +757,12 @@ regjsparser@^0.1.4:
   dependencies:
     jsesc "~0.5.0"
 
+repeating@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/repeating/-/repeating-1.1.3.tgz#3d4114218877537494f97f77f9785fab810fa4ac"
+  dependencies:
+    is-finite "^1.0.0"
+
 repeating@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/repeating/-/repeating-2.0.1.tgz#5214c53a926d3552707527fbab415dbc08d06dda"
@@ -753,9 +773,9 @@ resolve@^1.1.7:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.2.0.tgz#9589c3f2f6149d1417a40becc1663db6ec6bc26c"
 
-rxjs@5.0.0-beta.12:
-  version "5.0.0-beta.12"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.0.0-beta.12.tgz#cdfde2d8c4639d20ae7794bff8fddf32da7ad337"
+rxjs@~5.0.1:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.0.3.tgz#fc8bdf464ebf938812748e4196788f392fef9754"
   dependencies:
     symbol-observable "^1.0.1"
 
@@ -928,6 +948,6 @@ xdg-basedir@^2.0.0:
   dependencies:
     os-homedir "^1.0.0"
 
-zone.js@~0.6.21:
-  version "0.6.26"
-  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.6.26.tgz#067c13b8b80223a89b62e9dc82680f09762c4636"
+zone.js@~0.7.2:
+  version "0.7.6"
+  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.7.6.tgz#fbbc39d3e0261d0986f1ba06306eb3aeb0d22009"
