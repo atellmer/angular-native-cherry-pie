@@ -2,8 +2,8 @@
 import './vendor';
 
 // Core
-import { NgModule } from '@angular/core';
-import { NativeScriptModule } from 'nativescript-angular/platform';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { NativeScriptModule } from 'nativescript-angular/nativescript.module';
 import { NativeScriptHttpModule } from 'nativescript-angular/http';
 import { NativeScriptFormsModule } from 'nativescript-angular/forms';
 import { NativeScriptRouterModule } from 'nativescript-angular/router';
@@ -68,6 +68,9 @@ import { rootReducer } from './reducers';
   providers: [
     FakeUserService,
     UserActions
+  ],
+  schemas: [
+    NO_ERRORS_SCHEMA
   ],
   bootstrap: [AppComponent]
 })

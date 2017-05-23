@@ -9,22 +9,22 @@
         tabsBackgroundColor="#503276"
         tabTextColor="#FFF"
         selectedTabTextColor="#FFF">
-        <template tabItem title="Все">
+        <ng-template tabItem title="Все">
           <StackLayout>
             <ListView [items]="dialogs" separatorColor="transparent">
-              <template let-dialog="item">
+              <ng-template let-dialog="item">
                 <StackLayout [nsRouterLink]="['/panel/canvas/', dialog.id]" nsRouterLinkActive="link-active">
                   <tm-dialog-item [dialog]="dialog"></tm-dialog-item>
                 </StackLayout>
-              </template>
+              </ng-template>
             </ListView>
           </StackLayout>
-        </template>
-        <template tabItem title="Новые">
+        </ng-template>
+        <ng-template tabItem title="Новые">
           <StackLayout>
             <Label text="Second tab item"></Label>
           </StackLayout>
-        </template>
+        </ng-template>
       </TabView>
     </StackLayout>
   </DockLayout>

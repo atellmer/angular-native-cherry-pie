@@ -11,10 +11,12 @@ registerElement('FrescoDrawee', () => require('nativescript-fresco').FrescoDrawe
 registerElement('CardView', () => require('nativescript-cardview').CardView);
 registerElement('Ripple', () => require('nativescript-ripple').Ripple);
 
-if (app.android) {
-  app.onLaunch = function (intent) {
-    fresco.initialize();
-  };
-}
+
+app.on(app.launchEvent, function (args) {
+    if (args.android) {
+      fresco.initialize();
+    }
+});
+
 
 platformNativeScriptDynamic().bootstrapModule(AppModule);
