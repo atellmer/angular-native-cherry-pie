@@ -1,0 +1,15 @@
+<DockLayout class="canvas">
+  <FlexboxLayout class="flex">
+    <StackLayout>
+      <Label
+        text="Current Dialog: {{ currentDialog }}"
+        textWrap="true"></Label>
+      <Button
+        text="Go Back"
+        [nsRouterLink]="['/messenger']"
+        pageTransition="slideRight">
+      </Button>
+    </StackLayout>
+    <tm-message-panel></tm-message-panel>
+  </FlexboxLayout>
+</DockLayout>
